@@ -1,0 +1,22 @@
+{
+  "profile": "Profil",
+  "knowledgeBase": "Bilimlar bazasi",
+  "rating": "Reyting",
+  "settings": "Sozlamalar",
+  "help": "Yordam",
+  "logOut": "Chiqish",
+  "helpAdmin": "Sistema/to'lovlar/darslar haqidagi savollar bilan murojaat uchun",
+  "admin": "Administratorga",
+  "community": "Studenlar va mentorlar bilan muloqot uchun umumiy guruh",
+  "group": "Telegram gruppada",
+  "course": "Kurs bo'yicha",
+  "question": "savollar uchun",
+  "thisGroup": "bu guruhda",
+  "createPortfolio": "Portfolio",
+  "about": "О насUZ",
+  "blog": "БлогUZ",
+  "students": "СтудентыUZ",
+  "logIn": "ВойтиUZ",
+  "employment": "ТрудоустройствоUZ",
+  "questions": "Возникли вопросы?"
+}

@@ -1,0 +1,20 @@
+{
+  "course": "Kurs",
+  "extended": "kengaytirildi",
+  "subscription": "Kursga obuna",
+  "subscriptionEnd": "yakuniga yetdi. Kirish cheklangan",
+  "buyCourseForLesson": "Keyingi darsni ochish uchun kursni to'liq xarid qiling",
+  "openLesson": "Darsni ochish",
+  "inCourse": "darsda",
+  "checkLab": "Sizning laboratoriya ishingiz tekshirilish uchun yuborildi",
+  "needCheck": "Talabaning laborato'r ishini tekshirishingiz kerak",
+  "byLesson": "dars bo'yicha",
+  "fromCourse": "kursdan",
+  "youPurchased": "Siz kursni xarid qildingiz",
+  "for30Days": "30 kunga",
+  "haveTrialCourse": "Siz sinov darsini faollashtirdingiz",
+  "newLesson": "Yangi dars ochildi",
+  "buyCourseForLab": "Laborato'r ishingiz mentor tomonidan tekshiruvdan o'tishi uchun kursni xarid qiling",
+  "notifications": "Xabarlar",
+  "noNotifications": "Hali hech qanday xabar yo'q"
+}

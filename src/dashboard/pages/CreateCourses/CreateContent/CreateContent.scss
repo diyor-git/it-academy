@@ -1,0 +1,102 @@
+@import '../../../../colors';
+
+.clue {
+  margin-top: 15px;
+  font-weight: normal;
+}
+
+.timeContainer {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin: 0 5px;
+    font-size: 20px;
+  }
+
+  .ant-input-number {
+    width: 50px;
+    margin: 0;
+
+    input {
+      padding: 0 0 0 13px;
+    }
+
+    .ant-input-number-handler-wrap {
+      display: none;
+    }
+  }
+}
+
+.formTests {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+"testName ."
+"controlLab testPercentage"
+"btnSubmit btnSubmit";
+}
+
+.testName {
+  grid-area: testName;
+}
+
+.testPercentage {
+  grid-area: testPercentage;
+}
+
+.controlLab {
+  grid-area: controlLab;
+}
+
+.createContent {
+  background: $white;
+  border-radius: 24px;
+  position: relative;
+  padding: 50px;
+
+  a {
+    color: $black;
+  }
+
+
+  .addMenu {
+    width: 200px;
+    position: absolute;
+    display: flex;
+    z-index: 555;
+    right: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+    border-radius: 24px;
+    padding: 25px 18px;
+    justify-content: space-between;
+
+    .createTheoryButton,
+    .createTestsButton {
+      cursor: pointer;
+    }
+
+    img {
+      width: 55px;
+      height: 35px;
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 5px 0 0 0;
+    }
+  }
+
+  .lessonTitle {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin: 0 0 0 10px;
+      align-items: center;
+      align-content: center;
+    }
+  }
+}

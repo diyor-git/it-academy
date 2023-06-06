@@ -1,0 +1,32 @@
+@import "../../../colors";
+
+.button{
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 150%;
+    margin-top: 25px;
+    padding: 17px 80px;
+    border-radius: 10px;
+    transition: 300ms;
+    color: #fff;
+}
+
+.button.orange{
+  background: $orange;
+  border: 2px solid $orange;
+
+  &:hover {
+    color: $orange;
+    background: #fff;
+  }
+}
+
+.button.violet{
+  background: $violet;
+  border: 2px solid $violet;
+
+  &:hover {
+    color: $violet;
+    background: #fff;
+  }
+}

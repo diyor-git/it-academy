@@ -1,0 +1,102 @@
+@import "../../../colors";
+
+.it {
+  padding: 120px 0 180px 0;
+
+  .card-left,
+  .card-right {
+    display: flex;
+    margin-bottom: 150px;
+    img {
+      height: 350px;
+      border-radius: 15px;
+    }
+
+    h2 {
+      font-family: "DelaGothicOne", sans-serif;
+      color: $blue;
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 100%;
+      margin-bottom: 50px;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 150%;
+    }
+  }
+
+  .card-left {
+    .text {
+      margin-left: 68px;
+    }
+  }
+
+  .card-right {
+    .text {
+      margin-right: 42px;
+    }
+  }
+
+  .skills {
+    border-radius: 10px;
+    background: $blue;
+    padding: 48px 58px;
+
+    p {
+      color: $white;
+      font-weight: 600;
+      margin: 0;
+      font-size: 28px;
+      line-height: 150%;
+    }
+  }
+}
+@media (max-width: 945px) {
+  .it {
+    .title {
+      font-size: 40px;
+    }
+    .text {
+      h2 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 945px) {
+  .it {
+    .text {
+      margin-left: 0 !important;
+      margin-top: 30px;
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+    .title {
+      font-size: 40px;
+    }
+    .card-right {
+      flex-direction: column-reverse;
+    }
+    .card-left {
+      flex-direction: column;
+    }
+  }
+}
+@media (max-width: 515px) {
+  .it {
+    .skills{
+      padding: 25px 20px;
+    }
+    .title {
+      font-size: 30px;
+    }
+  }
+}

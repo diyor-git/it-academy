@@ -1,0 +1,39 @@
+@import '../../../colors';
+
+.green,
+.red,
+.yellow {
+  font-family: "NunitoSansExtraBold", sans-serif;
+  font-weight: bold;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: #e0b300;
+}
+
+.statistics {
+  width: 100%;
+  background: $white;
+  border-radius: 24px;
+  padding: 50px;
+
+  .totalStatistics,
+  .courseStatistics {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px 0;
+    margin-bottom: 30px;
+  }
+
+  .courseStatistics {
+    grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
+  }
+}

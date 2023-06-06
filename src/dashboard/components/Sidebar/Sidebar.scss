@@ -1,0 +1,193 @@
+@import '../../../colors';
+
+.sidebar,
+.viewSidebar {
+  width: 200px;
+  min-width: 200px;
+  background: #FFFFFF;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  box-shadow: 0 6px 58px rgba(94, 94, 94, 0.15);
+
+  .menu {
+    li {
+      height: unset;
+      padding-left: 0;
+    }
+
+    span {
+      height: 100%;
+      line-height: 20px;
+      white-space: pre-wrap;
+      align-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .ant-menu-title-content {
+      padding: 10px 0;
+    }
+  }
+
+  .menu .ant-menu-item-selected span {
+    color: $violet;
+  }
+
+  .ant-menu-title-content {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .ant-menu.ant-menu-inline-collapsed {
+    padding: 40px 0 !important;
+  }
+
+  .ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after {
+    border-right: 4px solid $violet;
+    border-radius: 2px;
+  }
+
+  .menu {
+    position: relative;
+    height: 100%;
+    padding: 40px 0 40px 10px;
+    border-radius: 24px;
+    box-shadow: 0 6px 58px rgba(196, 203, 214, 0.103611);
+
+    li span a {
+      font-weight: bold;
+      font-size: 16px;
+      color: #7D8592;
+      font-family: NunitoSansBold, sans-serif;
+    }
+
+    svg {
+      width: 20px;
+    }
+
+    svg path {
+      fill: #7D8592;
+    }
+
+    .ant-menu-title-content {
+      color: #7D8592;
+    }
+
+    .ant-menu-item-selected {
+      color: $violet;
+      background: #9696962e;
+      border-radius: 10px 0 0 10px;
+
+      svg path {
+        fill: $violet;
+      }
+
+      .ant-menu-title-content a {
+        color: $violet
+      }
+    }
+
+
+    .logo {
+      margin-bottom: 30px;
+      text-align: center;
+
+      img {
+        width: 85px;
+      }
+    }
+
+    .addChapter {
+      cursor: pointer;
+      margin-top: 5px;
+      font-weight: bold;
+      font-size: 16px;
+      height: 40px;
+      width: 100%;
+      background: transparent;
+      border: 2px dashed $black;
+      border-radius: 12px 0 0 12px;
+      align-items: center;
+
+      img {
+        width: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .bottomButtons {
+    bottom: 45px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+
+    button {
+      display: block;
+      font-weight: bold;
+      font-size: 16px;
+      color: $white;
+      outline: none;
+      border: none;
+      padding: 15px 13px;
+      cursor: pointer;
+      margin: 0 auto 15px auto;
+    }
+
+    .help {
+      background: $black;
+      box-shadow: 0 6px 12px rgba(135, 135, 135, 0.263686);
+      border-radius: 14px;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    .logout {
+      color: #7D8592;
+      background: transparent;
+      padding: 0;
+      margin-bottom: 45px;
+      text-align: center;
+
+      img {
+        margin-right: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .viewSidebar {
+    width: 100%;
+    max-width: unset;
+
+    .menu {
+      padding: 0;
+      border: none;
+    }
+  }
+  .ant-drawer-body {
+    padding: 10px;
+  }
+  .ant-tooltip-inner {
+    a {
+      color: $white;
+    }
+  }
+  .sidebar {
+    max-width: unset;
+
+    .menu {
+      border: none;
+      padding: 0;
+    }
+
+    .bottomButtons {
+      margin-top: 50px;
+    }
+  }
+}

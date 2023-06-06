@@ -1,0 +1,37 @@
+@import '../../../colors.scss';
+
+.preloader {
+  position: fixed;
+  transition: 1s;
+  z-index: 242;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background: $white;
+
+  img {
+    margin-top: 350px;
+    //width: 250px;
+    transition: 1s;
+  }
+}
+
+@media (max-width: 576px) {
+  .preloader {
+    img {
+      margin-top: 300px;
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: 476px) {
+  .preloader {
+    img {
+      margin-top: 250px;
+      width: 200px;
+    }
+  }
+}

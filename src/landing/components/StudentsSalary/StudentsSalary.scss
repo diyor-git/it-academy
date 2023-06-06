@@ -1,0 +1,55 @@
+@import "../../../colors";
+
+.students-salary {
+  padding: 120px 0;
+  background: #f5f7fd;
+
+  .swiper-scrollbar-drag {
+    width: 49%;
+    background: $orange !important;
+  }
+  .title {
+    text-align: center;
+  }
+
+  .card {
+    padding: 35px;
+    box-shadow: 0px 4px 25px rgba(199, 199, 199, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    background: $white;
+
+    h3 {
+      margin: 15px 0;
+      font-weight: 800;
+      font-size: 18px;
+      color: #272727;
+      line-height: 130%;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 130%;
+      letter-spacing: 0.02em;
+      color: #f2518e;
+    }
+
+    p {
+      margin-top: 10px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      color: #272727;
+      line-height: 135%;
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .students-salary {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none !important;
+    }
+  }
+}

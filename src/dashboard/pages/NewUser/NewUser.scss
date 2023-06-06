@@ -1,0 +1,166 @@
+@import '../../../colors';
+
+.settings {
+  width: 100%;
+  background: $white;
+  border-radius: 24px;
+  padding: 50px;
+  box-shadow: 0 6px 30px rgba(132, 136, 142, 0.2);
+
+  input {
+    padding: 15px;
+  }
+
+  .uploadBtn {
+    cursor: pointer;
+  }
+
+  .content {
+    margin: 25px auto 0 auto;
+
+    .next {
+      text-align: center;
+      display: flex;
+      margin: 30px auto;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .error {
+      display: block;
+    }
+
+    .doubleField {
+      gap: 25px 15px;
+      align-content: center;
+      align-items: center;
+
+      .changeAva {
+        width: 412px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .text {
+          button {
+            font-weight: bold;
+            font-size: 16px;
+            padding: 16px 26px;
+            background: $white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+            border: none;
+            border-radius: 10px;
+          }
+
+          p {
+            font-weight: bold;
+            font-size: 16px;
+            color: $black;
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 16px;
+      color: #7D8592;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 16px;
+      margin: 0 0 30px 0;
+      font-family: NunitoSansBold, sans-serif;
+    }
+
+    input, ,textarea, .ant-picker, select, .ant-input-password {
+      width: 412px;
+      height: 40px;
+      margin: 0;
+    resize: none;
+      background: $white;
+      text-align: center;
+      border: none;
+      border-bottom: 1px solid #D1D1D1;
+      //box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+      outline: none;
+    }
+
+    textarea{
+      height: 150px;
+      padding: 20px;
+      border-radius: 20px;
+      border: 1px solid #D1D1D1;
+    }
+
+    select {
+      padding: 0 15px;
+    }
+
+
+    .ant-picker,
+    .ant-input-password {
+      padding: 0;
+
+      input {
+        padding: 15px;
+        width: 100%;
+        height: unset;
+        background: transparent;
+        box-shadow: none;
+      }
+    }
+
+    .ant-picker-input {
+      padding: 15px;
+
+      input {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .settings {
+    padding: 15px;
+
+    .title {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+}
+
+
+@media (max-width: 575px) {
+  .settings {
+    h3 {
+      text-align: center;
+    }
+
+    .content {
+      padding: 20px;
+
+      input,
+      select,
+      .ant-input-password,
+      .ant-picker {
+        width: 100%;
+      }
+
+      .doubleField {
+        .changeAva {
+          text-align: center;
+          margin: 0 auto;
+          width: 100%;
+          grid-template-columns: 1fr;
+          gap: 20px 0;
+        }
+      }
+    }
+  }
+}

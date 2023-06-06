@@ -1,0 +1,109 @@
+@import '../../../../colors';
+
+.ant-table-wrapper {
+  padding: 5px;
+  background: $white;
+  box-shadow: 0 6px 58px rgba(196, 203, 214, 0.103611);
+  border-radius: 24px;
+
+  .ant-table-thead > tr > th {
+    background: transparent;
+  }
+
+  .ant-table-body::-webkit-scrollbar {
+    visibility: hidden;
+  }
+}
+
+.formLesson {
+  display: grid;
+  margin-bottom: 15px;
+  grid-template-columns: 1fr;
+  gap: 5px 20px;
+  grid-template-areas:
+    "doubleField"
+    "optionsFields"
+    "doubleImg"
+    "description"
+    "active"
+    "btnSubmit";
+}
+
+.description {
+  grid-area: description;
+}
+
+.doubleFieldLesson {
+  display: grid;
+  gap: 10px 15px;
+  margin-bottom: 10px;
+  grid-area: doubleField;
+  grid-template-columns: 2fr 1fr !important;
+}
+
+
+.optionsFields {
+  grid-area: optionsFields;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 10px;
+  margin-bottom: 15px;
+}
+
+.doubleImg {
+  grid-area: doubleImg;
+  display: grid;
+  gap: 5px 20px;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 15px;
+}
+
+.ant-input-number {
+  width: 100%;
+  border: none;
+}
+
+.ant-input-number:focus, .ant-input-number-focused {
+  box-shadow: none;
+}
+
+.create {
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  color: $white;
+  display: flex;
+  margin: auto 1px 15px auto;
+  align-items: center;
+  padding: 13px 45px;
+  border-radius: 14px;
+  background: $black;
+  border: none;
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.createLesson {
+  background: $white;
+  border-radius: 24px;
+  padding: 50px;
+
+  a {
+    color: $black;
+  }
+
+  .lessonTitle {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin: 0 0 0 10px;
+      align-items: center;
+      align-content: center;
+    }
+  }
+
+}

@@ -1,0 +1,103 @@
+@import "../../../colors";
+
+.achievements {
+  padding: 170px 0 0 200px;
+
+  .ant-steps-vertical
+  > .ant-steps-item
+  > .ant-steps-item-container
+  > .ant-steps-item-tail::after {
+    width: 6px;
+    border-radius: 3px;
+    background: $violet;
+  }
+
+  .ant-steps-dot .ant-steps-item-icon .ant-steps-icon-dot,
+  .ant-steps-dot.ant-steps-small .ant-steps-item-icon .ant-steps-icon-dot {
+    width: 14px;
+    height: 14px;
+    margin-top: -3px;
+    margin-left: -1px;
+    background: $violet;
+  }
+
+  .bodyCard {
+    margin-left: 50px;
+
+    .images {
+      margin-top: 70px;
+
+      img {
+        margin-top: 10px;
+      }
+
+      img:nth-child(1) {
+        margin-right: 7px;
+      }
+    }
+
+    .stepCard {
+      box-shadow: 0 0 15px rgba(187, 121, 146, 0.15);
+      border-radius: 10px;
+      padding: 50px;
+      margin: 10px;
+
+      h3 {
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 130%;
+        color: $black;
+        font-family: "Manrope-ExtraBold", sans-serif;
+        margin: 0 0 50px 0;
+      }
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 28px;
+      margin: 0;
+      line-height: 150%;
+      color: $black;
+    }
+
+    .sub-title {
+      margin-top: 80px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .achievements {
+    padding: 170px 0 0 0;
+
+    .bodyCard {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .achievements {
+    .bodyCard {
+      margin: 0;
+      .images {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 495px) {
+  .achievements {
+    .bodyCard {
+      margin: 0;
+      .stepCard{
+        padding: 20px 10px;
+      }
+    }
+  }
+}

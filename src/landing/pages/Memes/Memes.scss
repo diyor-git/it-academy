@@ -1,0 +1,45 @@
+@import "./src/colors";
+
+.memes {
+  .title {
+    margin-top: 100px;
+  }
+
+  .memesContainer {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .meme {
+    margin-top: 50px;
+
+    p {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 135%;
+      color: $pink;
+    }
+
+    img {
+      text-align: center;
+      border-radius: 10px;
+      margin: 0 auto;
+      display: flex;
+      max-width: 750px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .memes {
+    .memesContainer {
+      width: 100%;
+
+      .meme {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

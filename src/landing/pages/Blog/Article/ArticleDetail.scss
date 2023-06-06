@@ -1,0 +1,41 @@
+.article {
+  background: #fff;
+  .contentArticle {
+    margin-top: 30px;
+  }
+  .headerArticle {
+    margin-top: 120px;
+    img {
+      width: 100%;
+    }
+  }
+  .ce-block__content,
+  .ce-toolbar__content {
+    max-width: 100%;
+  }
+  .codex-editor__redactor {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 1165px) {
+  .article {
+    .title {
+      font-size: 46px;
+    }
+  }
+}
+@media (max-width: 760px) {
+  .article {
+    .title {
+      font-size: 34px;
+    }
+  }
+}
+@media (max-width: 565px) {
+  .article {
+    .title {
+      font-size: 27px;
+    }
+  }
+}

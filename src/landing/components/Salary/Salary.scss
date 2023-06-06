@@ -1,0 +1,126 @@
+@import "../../../colors";
+
+.salary {
+  padding-bottom: 180px;
+
+  .card {
+    padding: 45px 0 25px 0;
+    position: relative;
+    margin: 0 auto;
+    background: $white;
+    max-width: 1360px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 25px #e0e2ea;
+    border-radius: 20px;
+
+    img {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .card-body {
+      display: flex;
+      justify-content: space-between;
+
+      .text {
+        h3 {
+          font-weight: bold;
+          font-size: 46px;
+          line-height: 130%;
+        }
+
+        span {
+          color: $orange;
+          font-weight: bold;
+          font-size: 46px;
+          margin-right: 25px;
+        }
+
+        p {
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+
+      .price {
+        span {
+          //font-weight: bold;
+          font-size: 70px;
+          display: block;
+          font-family: "DelaGothicOne", sans-serif;
+          color: $pink;
+          text-align: right;
+        }
+        p {
+          margin: -50px 0 0 0;
+          color: $pink;
+          text-align: right;
+          font-weight: bold;
+          font-size: 72px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .salary {
+    .price {
+      span {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .salary {
+    .card {
+      text-align: center;
+      img {
+        display: none;
+      }
+      .card-body {
+        display: block;
+        .price {
+          background: rgba(236, 188, 225, 0.13);
+          width: 100%;
+          padding: 25px;
+          text-align: center;
+          border-radius: 10px;
+          span {
+            margin-bottom: 20px;
+          }
+          span,
+          p {
+            text-align: center;
+            font-size: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 570px) {
+  .salary {
+    padding-bottom: 100px;
+    .card-body {
+      .price {
+        span {
+          margin-bottom: 30px !important;
+        }
+        span,
+        p {
+          font-size: 30px !important;
+        }
+      }
+      .text {
+        h3 {
+          font-size: 35px !important;
+        }
+      }
+    }
+  }
+}

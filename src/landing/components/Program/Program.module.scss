@@ -1,0 +1,153 @@
+@import "../../../colors.scss";
+
+.program {
+  .star {
+    position: absolute;
+    left: -10%;
+    bottom: 25%;
+    img {
+      transform: rotate(300deg);
+    }
+  }
+  .accordionUl {
+    display: flex;
+    column-gap: 125px;
+    ul {
+      list-style: none;
+      z-index: 1;
+      li {
+        font-size: 16px;
+        line-height: 130%;
+        position: relative;
+        margin-bottom: 15px;
+      }
+      li:before {
+        content: "";
+        position: absolute;
+        transform: rotate(90deg);
+        height: 3px;
+        width: 17px;
+        background: $gradient;
+        left: -20px;
+        top: 7px;
+      }
+    }
+  }
+  background: #000;
+  .accordionHeader {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+    column-gap: 50px;
+    .accordionHeaderText {
+      max-width: 680px;
+      z-index: 111;
+      width: 100%;
+    }
+    .ant-collapse-arrow {
+      order: 2;
+    }
+    h3 {
+      color: $white !important;
+      font-family: MullerMedium, sans-serif;
+      font-size: 26px;
+      line-height: 110%;
+    }
+    p {
+      font-size: 20px;
+      font-family: MullerRegular, sans-serif;
+      margin-top: 30px;
+      line-height: 130%;
+      z-index: 11;
+    }
+  }
+  h2 {
+    color: $white;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .accordionDiv {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 90px;
+    h3 {
+      font-size: 32px;
+      line-height: 110%;
+      color: $yellow;
+      margin-top: 20px;
+    }
+  }
+  .accordionBtns {
+    display: flex;
+    h3 {
+      padding: 20px;
+      z-index: 1;
+      position: relative;
+      font-size: 32px;
+      line-height: 32px;
+      color: $white;
+      cursor: pointer;
+    }
+    .line {
+      transition: 300ms;
+
+      height: 4px;
+      position: absolute;
+      background: $gradient;
+      top: 70px;
+      left: 0;
+      width: 100%;
+    }
+    .back {
+      width: max-content;
+      position: relative;
+    }
+  }
+}
+.none {
+  display: none !important;
+}
+
+@media (max-width: 1000px) {
+  .program {
+    .accordionDiv {
+      grid-template-columns: 1fr;
+      .accordionUl {
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .program {
+    .star {
+      top: 20%;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .program {
+    .accordionText {
+      h3 {
+        font-size: 30px !important;
+      }
+    }
+    .accordionBtns {
+      h3 {
+        font-size: 30px;
+      }
+    }
+    h2 {
+      font-size: 40px;
+    }
+    .accordionDiv {
+      h3 {
+        font-size: 20px ;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../../colors";
+
+.reviewsStudents {
+  padding: 120px 0;
+  background: #f5f7fd;
+
+  .title {
+    text-align: center;
+  }
+
+  .card {
+    padding: 35px;
+    box-shadow: 0px 4px 25px rgba(199, 199, 199, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    background: $white;
+
+    h3 {
+      margin: 15px 0;
+      font-weight: 800;
+      font-size: 18px;
+      color: #272727;
+      line-height: 130%;
+    }
+
+    p {
+      margin-top: 10px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      color: #272727;
+      line-height: 135%;
+    }
+  }
+}

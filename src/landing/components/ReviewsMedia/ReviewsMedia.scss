@@ -1,0 +1,83 @@
+@import "../../../colors";
+
+.reviewsMedia {
+  padding: 120px 0;
+  background: #f5f7fd;
+
+  .slider {
+    margin-bottom: 50px;
+  }
+
+  .title {
+    text-align: center;
+    span {
+      color: #3a5def;
+    }
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    .message {
+      padding: 35px;
+      box-shadow: 0 4px 25px #e0e2ea;
+      border-radius: 10px;
+      background: $white;
+      width: 1000px;
+    }
+    .logo {
+      margin-left: 55px;
+      margin-right: 55px;
+      img{
+        width: 250px;
+      }
+    }
+
+    h3 {
+      margin: 15px 0;
+      font-weight: 800;
+      font-size: 18px;
+      color: #272727;
+      line-height: 130%;
+    }
+
+    p {
+      margin-top: 10px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      color: #272727;
+      line-height: 135%;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .reviewsMedia {
+    .second-slider {
+      display: none;
+    }
+    .card {
+      background: $white;
+      box-shadow: 0 4px 25px #e0e2ea;
+      flex-direction: column-reverse !important;
+      min-height: 500px;
+      margin: 0 20px;
+      height: 100%;
+      padding: 20px 0;
+      border-radius: 20px;
+      .message {
+        max-width: 660px;
+        width: 100%;
+        box-shadow: none;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .reviewsMedia {
+    .title {
+      font-size: 30px;
+    }
+  }
+}

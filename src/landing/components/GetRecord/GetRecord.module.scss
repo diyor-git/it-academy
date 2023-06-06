@@ -1,0 +1,66 @@
+@import "../../../colors.scss";
+
+.getRecord {
+  background: #050505;
+  position: relative;
+  span {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: $gradient;
+  }
+  .getRecordContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 55px;
+    padding: 20px 0;
+    button {
+      padding: 19px 20px;
+      background: $yellow;
+      mix-blend-mode: normal;
+      border-radius: 10px;
+      border: none;
+      color: $black;
+      font-family: MullerBold, sans-serif;
+      cursor: pointer;
+    }
+    p {
+      font-family: MullerBold;
+      font-size: 22px;
+      margin: 0;
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 1325px) {
+  .getRecord {
+    p {
+      font-size: 19px !important;
+    }
+  }
+}
+
+@media (max-width: 1178px) {
+  .getRecord {
+    p {
+      font-size: 16px !important;
+    }
+  }
+}
+@media (max-width: 1037px) {
+  .getRecord {
+    p {
+      text-align: center;
+      margin-bottom: 20px !important;
+      font-size: 24px !important;
+    }
+    button {
+      width: 100%;
+    }
+    .getRecordContent {
+      display: block;
+    }
+  }
+}
