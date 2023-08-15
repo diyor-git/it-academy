@@ -1,0 +1,17 @@
+@import '../../colors';
+
+.registration {
+  background: $bg-dashboard;
+  padding: 20px;
+  height: 100%;
+
+  .container {
+    height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .registration {
+    display: flex;
+  }
+}

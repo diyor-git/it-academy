@@ -1,0 +1,59 @@
+@import '../../../../colors';
+
+.lab {
+  width: 100%;
+  background: $white;
+  box-shadow: 0 6px 58px rgba(196, 203, 214, 0.103611);
+  border-radius: 24px;
+  padding: 50px;
+  position: relative;
+
+  .line {
+    height: 1px;
+    width: 600px;
+    background: $black;
+    color: $black;
+    margin: 20px 0;
+  }
+
+  form {
+    span {
+      display: block;
+      margin-top: 5px;
+    }
+
+    button {
+      display: block;
+      background: $black;
+      color: white;
+      border: 1px solid black;
+      border-radius: 12px;
+      padding: 7px 9px;
+      cursor: pointer;
+    }
+
+    textarea {
+      margin-top: 30px;
+      width: 400px;
+    }
+
+    label {
+      align-items: center;
+
+      p {
+        white-space: nowrap;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+
+    input {
+      border-radius: 15px;
+      border: 1px solid black;
+      outline: none;
+      height: 40px;
+      width: 50px;
+      text-align: center;
+    }
+  }
+}

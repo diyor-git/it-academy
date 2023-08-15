@@ -1,0 +1,84 @@
+@import "../../../colors";
+
+.students-portfolio {
+  .banner {
+    background: url("../../../assets/image/studentportfoliobanner.png")
+      no-repeat center center/cover;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 30px;
+
+    .banner-content {
+      margin-top: 150px;
+      margin-bottom: 50px;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      margin-top: 75px;
+
+      & .card:nth-child(2) h5 {
+        border-bottom: 2px solid $violet;
+      }
+
+      .card {
+        h5 {
+          font-weight: 800;
+          font-size: 28px;
+          line-height: 130%;
+          border-bottom: 2px solid $lightGreen;
+          letter-spacing: 0.02em;
+          padding-bottom: 14px;
+          color: #ffffff;
+        }
+
+        h6 {
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 130%;
+          letter-spacing: 0.02em;
+          color: $white;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 82px;
+      line-height: 100%;
+      letter-spacing: 3px;
+      font-weight: bold;
+      color: $white;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 130%;
+      letter-spacing: 0.02em;
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 965px) {
+  .students-portfolio {
+    .banner-content {
+      h2 {
+        font-size: 55px;
+      }
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  .students-portfolio {
+    .info {
+      flex-direction: column;
+      gap: 30px !important;
+      .card {
+        width: 100%;
+      }
+    }
+  }
+}

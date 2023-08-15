@@ -1,0 +1,58 @@
+@import "../../../colors";
+
+.landing {
+  background: #fff;
+
+  .landingBanner {
+    background: url("../../../assets/image/landingImg.png") no-repeat fixed center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+    .text {
+      margin-top: 200px;
+      //padding: 0 30px;
+
+      h1 {
+        color: $white;
+        font-family: "DelaGothicOne", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 78px;
+        line-height: 100%;
+
+        margin: 0 0 40px 0;
+      }
+
+      h3 {
+        color: $white;
+        font-weight: normal;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 835px) {
+  .landing {
+    .banner {
+      .text {
+        h1 {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .landing {
+    .landingBanner {
+      .text {
+        h1 {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}

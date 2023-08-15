@@ -1,0 +1,109 @@
+@import "../../../colors";
+
+.student-detail-info {
+  padding-top: 140px;
+  .student-about {
+    h3 {
+      color: #272727;
+      font-weight: 800;
+      font-size: 60px;
+      letter-spacing: 0.02em;
+      line-height: 130%;
+      margin-bottom: 50px;
+      margin-top: 100px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      color: #272727;
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    border-bottom: 2px solid $lightGreen;
+    padding-bottom: 120px;
+
+    .second-content{
+      img{
+        object-fit: cover;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+      }
+    }
+    .info-list {
+      display: flex;
+      gap: 80px;
+      align-items: center;
+      ul {
+        &:nth-of-type(2) {
+          li {
+            font-weight: 100;
+          }
+        }
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          color: #272727;
+          font-weight: 600;
+          margin-bottom: 25px;
+          font-size: 23px;
+          line-height: 130%;
+        }
+      }
+    }
+    .title {
+      margin-bottom: 40px;
+      h4 {
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: #272727;
+        margin-bottom: 10px;
+      }
+      h5 {
+        margin-bottom: 0;
+        color: $blue;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .student-detail-info {
+    .content {
+      .info-list {
+        gap: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 830px) {
+  .student-detail-info {
+    .content {
+      grid-template-columns: 1fr;
+
+      .first-content {
+        grid-row: 2;
+      }
+      .second-content {
+        grid-row: 1;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      ul {
+        gap: 20px;
+        width: 100%;
+      }
+    }
+  }
+}

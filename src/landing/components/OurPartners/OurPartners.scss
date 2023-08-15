@@ -1,0 +1,28 @@
+@import "../../../colors";
+
+.ourPartners {
+  padding-bottom: 180px;
+  align-items: center;
+
+  .swiper {
+    .swiper-wrapper {
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        opacity: 0.2;
+
+        &.swiper-slide-next,
+        &.swiper-slide-prev,
+        &.swiper-slide-active {
+          opacity: 1;
+        }
+
+        img {
+
+        }
+      }
+    }
+  }
+}

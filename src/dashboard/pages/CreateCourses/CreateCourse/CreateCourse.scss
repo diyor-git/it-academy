@@ -1,0 +1,245 @@
+@import '../../../../colors';
+
+.modal .ant-modal-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.btnSubmit {
+  grid-area: btnSubmit;
+  text-align: center;
+  margin: 0 auto;
+  height: 40px;
+  font-weight: bold;
+  background: transparent;
+  border: 1px solid $black;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.formCourse,
+.formLesson,
+.formLab,
+.formTests {
+  display: grid;
+  margin-bottom: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    "courseName titleLms"
+    "mentors teacher"
+    "duration price"
+    "telegram telegram"
+    "imgLanding imgLms"
+    "active active"
+    "btnSubmit btnSubmit";
+
+  .courseName {
+    grid-area: courseName
+  }
+
+  .titleLms {
+    grid-area: titleLms;
+  }
+  .telegram {
+    grid-area: telegram;
+  }
+
+  .teacher {
+    grid-area: teacher;
+  }
+
+  .duration {
+    grid-area: duration;
+  }
+
+  .price {
+    grid-area: price;
+  }
+
+  .mentors {
+    grid-area: mentors;
+  }
+
+  .imgLms {
+    grid-area: imgLms;
+  }
+
+  .imgLanding {
+    grid-area: imgLanding;
+  }
+
+  .error {
+    color: red;
+  }
+
+  .ant-select-single .ant-select-selector .ant-select-selection-item, .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+    line-height: 40px;
+    margin-left: 5px;
+  }
+
+  .active {
+    grid-area: active;
+    display: flex;
+
+    input {
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+    }
+  }
+
+  input,
+  textarea,
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    width: 100%;
+    min-height: 40px;
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #7D8592;
+    box-shadow: 0 1px 2px rgba(184, 200, 224, 0.222055);
+    border-radius: 8px;
+    outline: none;
+    color: black;
+
+    &::placeholder {
+
+    }
+  }
+
+  .ant-select-selection-placeholder {
+    color: #9D9D9D;
+  }
+
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    padding: 0 0 0 5px;
+  }
+
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+
+  h3, p {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+}
+
+.createCourse{
+  width: 100%;
+  background: $white;
+  border-radius: 24px;
+  padding: 50px;
+}
+
+.btn {
+  height: 40px;
+  background: transparent;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 1px solid $black;
+  cursor: pointer;
+}
+
+.upload {
+  width: 200px;
+  cursor: pointer;
+}
+
+.installImg {
+  border: 2px dashed $black;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+}
+
+.previewImage {
+  width: 100%;
+  height: 250px;
+  border: 2px dashed black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 240px;
+    align-content: center;
+    text-align: center;
+    object-fit: contain;
+  }
+
+  .changeBanner {
+    display: none;
+  }
+
+  &:hover {
+    .changeBanner {
+      position: absolute;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgb(33 33 33 / 73%);
+
+      .btn {
+        background: $white;
+      }
+    }
+
+    .content {
+
+      h3, p {
+        color: $white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.newCourse {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 58px rgba(92, 95, 100, 0.22);
+  border-radius: 16px;
+  width: 345px;
+  height: 306px;
+  padding: 8px;
+  background: transparent;
+  border: 4px dashed black;
+
+  img {
+    width: 100px;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}
+.courseGrid{
+  width: 100%;
+  background: $white;
+  box-shadow: 0 6px 58px rgba(196, 203, 214, 0.103611);
+  border-radius: 24px;
+  padding: 30px 35px 35px 35px;
+  margin: 25px auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
+
+  .title {
+    margin-top: 0;
+  }
+
+
+}

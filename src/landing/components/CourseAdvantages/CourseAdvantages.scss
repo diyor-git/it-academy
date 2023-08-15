@@ -1,0 +1,56 @@
+@import "./src/colors";
+
+.course-advantages {
+  padding: 100px 0;
+  background: rgba(188, 193, 236, 0.11);
+
+  h2 {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #272727;
+
+    span {
+      color: $blue;
+    }
+  }
+
+  .cards {
+    .card {
+      display: flex;
+      margin-bottom: 50px;
+
+      &:nth-child(2) {
+        flex-direction: row-reverse;
+
+        .photo {
+          margin: 0 50px 0 0;
+        }
+      }
+
+      p {
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 150%;
+      }
+
+      .photo {
+        margin-left: 50px;
+
+        img {
+          max-width: 400px;
+          //width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 857px) {
+  .course-advantages {
+    .card {
+      flex-direction: column !important;
+    }
+  }
+}

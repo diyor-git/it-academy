@@ -1,0 +1,303 @@
+@import '../../../colors';
+
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 275px;
+  background-image: url("../../../assets/image/bannerImg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 24px 24px 0 0;
+
+  h2, title {
+    text-shadow: 0 1px 8px rgb(0, 0, 0);
+    color: $white;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 35px;
+    margin-left: 25px;
+    margin-top: 70px;
+  }
+
+  h2 {
+    font-family: MullerBold, sans-serif;
+  }
+
+  .title {
+    font-family: MullerMedium, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 64px;
+    margin-top: 220px;
+  }
+
+  .ava {
+    margin-left: 90px;
+    margin-top: 120px;
+    display: flex;
+
+    .ant-avatar {
+      background: white;
+      border: 1px solid black;
+    }
+  }
+
+  .settingsBtn {
+    margin-top: 185px;
+    margin-right: 90px;
+
+    button {
+      background: $gradient;
+
+      &:hover {
+        background: $gradient2;
+      }
+    }
+  }
+}
+
+.profile {
+  width: 100%;
+  background: $white;
+  box-shadow: 0 6px 30px rgba(132, 136, 142, 0.2);
+  border-radius: 24px;
+  position: relative;
+
+  .content {
+    margin-top: 36px;
+    padding: 50px;
+
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+
+      .calendar {
+        width: 340px;
+        padding: 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+        border-radius: 14px;
+
+        .calendarPanel {
+          border: none;
+          //max-width: 350px;
+          height: 300px;
+          //padding: 25px;
+          border-right: 14px;
+
+
+          .rc_body-days-of-month .rc_body-cell.rc_selected .rc_body-cell_value {
+            background-color: $black;
+            border-radius: 50px;
+          }
+        }
+
+        .calendarFooter {
+          h3 {
+            font-family: MullerBold, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 0 20px 0;
+          }
+
+          p {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            font-family: MullerMedium, sans-serif;
+          }
+        }
+      }
+    }
+
+    .recharts-wrapper {
+      margin-left: -50px;
+
+      .recharts-surface {
+        width: 632px !important;
+      }
+
+      .recharts-layer {
+        circle {
+          fill: $violet;
+          stroke: $violet;
+        }
+      }
+    }
+
+    .stats {
+      display: flex;
+      margin-top: 35px;
+
+      p {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        margin-right: 100px;
+        font-family: MullerMedium, sans-serif;
+
+        span {
+          color: $violet;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .banner,
+  .bannerLesson {
+    height: 215px;
+
+    .title {
+      margin-left: 25px;
+      margin-top: 125px;
+      font-size: 25px;
+    }
+
+    .ava {
+      margin-top: 45px;
+      margin-left: 35px;
+    }
+
+    .settingsBtn {
+      margin-top: 70px;
+    }
+
+    h2 {
+      margin-top: 45px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .profile {
+    .content {
+      .flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+
+        .calendar {
+          margin: 0;
+        }
+
+        .chart {
+          margin-bottom: 25px;
+
+          .recharts-wrapper {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .banner,
+  .bannerLesson {
+    height: 130px;
+
+    .settingsBtn {
+      margin-top: 40px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    .ava {
+      margin-top: 15px;
+      margin-left: 35px;
+    }
+
+    .title {
+      margin-left: 25px;
+      margin-top: 70px;
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .profile {
+    .content {
+      .recharts-wrapper {
+        .recharts-surface {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .profile {
+    .content {
+      padding: 15px;
+
+      .stats {
+        margin: 0 0 20px 0;
+        justify-content: space-between;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .flex {
+        .calendar {
+          max-width: unset;
+          width: 100%;
+        }
+      }
+
+      .title {
+        margin: 0;
+      }
+    }
+  }
+
+  .chart {
+    .recharts-wrapper {
+      width: 100% !important;
+      margin: 0;
+
+      .recharts-surface {
+        width: 100%;
+      }
+    }
+  }
+  .banner,
+  .bannerLesson {
+    .title {
+      margin-top: 35px;
+      font-size: 20px;
+    }
+
+    .settingsBtn {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .banner,
+  .bannerLesson {
+    .title {
+      margin-top: 35px;
+      font-size: 20px;
+    }
+
+    .settingsBtn {
+      display: none;
+    }
+  }
+}

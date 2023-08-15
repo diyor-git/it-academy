@@ -1,0 +1,31 @@
+<svg width="495" height="426" viewBox="0 0 495 426" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.001 0C4.47813 0 0.000976562 4.47715 0.000976562 10V83C0.000976562 88.5229 4.47814 93 10.001 93H485.001C490.524 93 495.001 88.5228 495.001 83V10C495.001 4.47715 490.524 0 485.001 0H10.001ZM10 111C4.47715 111 0 115.477 0 121V194C0 199.523 4.47716 204 10 204H485C490.523 204 495 199.523 495 194V121C495 115.477 490.523 111 485 111H10ZM0 232C0 226.477 4.47715 222 10 222H485C490.523 222 495 226.477 495 232V305C495 310.523 490.523 315 485 315H10C4.47716 315 0 310.523 0 305V232ZM10 333C4.47715 333 0 337.477 0 343V416C0 421.523 4.47716 426 10 426H485C490.523 426 495 421.523 495 416V343C495 337.477 490.523 333 485 333H10Z" fill="url(#paint0_linear_364_3581)"/>
+<rect x="7" y="86" width="4" height="32" rx="2" fill="#EAE2E2"/>
+<rect x="484" y="86" width="4" height="32" rx="2" fill="#EAE2E2"/>
+<rect x="7" y="197" width="4" height="32" rx="2" fill="#EAE2E2"/>
+<rect x="484" y="197" width="4" height="32" rx="2" fill="#EAE2E2"/>
+<rect x="7" y="308" width="4" height="32" rx="2" fill="#EAE2E2"/>
+<rect x="484" y="308" width="4" height="32" rx="2" fill="#EAE2E2"/>
+<ellipse cx="9" cy="417.001" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="9" cy="342.001" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="486" cy="417.001" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="486" cy="342.001" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="9" cy="195.001" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="9" cy="120.001" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="486" cy="195.001" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="486" cy="120.001" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="9" cy="84.0006" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="9" cy="9.00059" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="486" cy="84.0006" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="486" cy="9.00059" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="9" cy="306.001" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="9" cy="231.001" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="486" cy="306.001" rx="4" ry="4.00059" fill="black"/>
+<ellipse cx="486" cy="231.001" rx="4" ry="4.00059" fill="black"/>
+<defs>
+<linearGradient id="paint0_linear_364_3581" x1="248.5" y1="0" x2="248.5" y2="427" gradientUnits="userSpaceOnUse">
+<stop offset="0.244792" stop-color="#6A12CC"/>
+<stop offset="1" stop-color="#FFD200"/>
+</linearGradient>
+</defs>
+</svg>

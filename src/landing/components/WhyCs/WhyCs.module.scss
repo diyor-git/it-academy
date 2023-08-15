@@ -1,0 +1,199 @@
+@import "../../../colors.scss";
+
+.whyCs {
+  background: #000;
+  padding: 150px 0;
+
+  .whoCsCards {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    .whoCsCard {
+      background: $black;
+      padding: 35px;
+      height: 100%;
+
+      h3 {
+        color: $yellow;
+        font-size: 32px;
+      }
+
+      ul {
+        margin: 0 !important;
+        list-style: none;
+        padding: 0;
+        padding-left: 15px !important;
+        margin-top: 35px;
+
+        li {
+          margin-bottom: 20px;
+          font-size: 20px;
+          color: $white;
+          position: relative;
+        }
+
+        li:before {
+          content: "";
+          position: absolute;
+          height: 80%;
+          width: 3px;
+          background: $gradient;
+          left: -20px;
+          top: 3px;
+        }
+      }
+    }
+  }
+
+  .whyCsContent {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin-top: 80px;
+    column-gap: 50px;
+  }
+
+  h2 {
+    font-family: MullerBold;
+    font-size: 48px;
+    color: $white;
+    line-height: 115%;
+  }
+
+  .whyCsText {
+    display: grid;
+    gap: 25px;
+
+    p {
+      color: $white;
+      font-size: 20px;
+      line-height: 130%;
+    }
+  }
+
+  .whyCsBtns {
+    .whoCsBtnsp {
+      display: block;
+    }
+
+    .whyCsBtn {
+      display: none;
+    }
+
+    position: relative;
+
+    p {
+      position: absolute;
+      font-size: 26px;
+      line-height: 115%;
+      color: $white;
+    }
+
+    p:nth-of-type(1) {
+      top: 36px;
+      left: 8%;
+    }
+
+    p:nth-of-type(2) {
+      top: 145px;
+      left: 6%;
+    }
+
+    p:nth-of-type(3) {
+      top: 255px;
+      left: 10%;
+    }
+
+    p:nth-of-type(4) {
+      top: 367px;
+      left: 7%;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      padding: 24px 27px;
+      font-size: 26px;
+      line-height: 115%;
+      border: none;
+      background: $gradient;
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .whyCs {
+    h3 {
+      font-size: 35px;
+    }
+
+    .whyCsContent {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+
+      .whyCsBtns {
+        width: max-content;
+        margin: auto;
+      }
+    }
+
+    .whoCsCards {
+      display: grid;
+      grid-template-columns: 1fr !important;
+    }
+  }
+}
+
+@media (max-width: 506px) {
+  .whyCs {
+    h2 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .whyCs {
+    .whyCsBtns {
+      button {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .whyCs {
+    .whyCsBtn {
+      display: block !important;
+    }
+    .whoCsBtnsp {
+      display: none !important;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .whyCs {
+    .whoCsCards {
+      .whoCsCard {
+        padding: 15px 10px;
+      }
+    }
+    .whyCsBtns {
+      button {
+        font-size: 14px;
+        padding: 20px 5px;
+      }
+    }
+  }
+}

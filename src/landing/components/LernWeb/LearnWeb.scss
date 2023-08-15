@@ -1,0 +1,148 @@
+@import "../../../colors";
+
+.learnWeb {
+  background: $white;
+  padding: 120px 0 90px 0;
+
+  .title {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .cards {
+    .card-left,
+    .card-right {
+      display: flex;
+      margin-bottom: 80px;
+
+      img {
+        height: 350px;
+        border-radius: 10px;
+      }
+
+      .text {
+        position: relative;
+        display: flex;
+        margin-right: 30px;
+        padding: 25px 25px 25px 175px;
+        background: $white;
+        box-shadow: 0 4px 25px rgba(243, 206, 222, 0.4);
+        border-radius: 10px;
+
+        &:nth-child(2) {
+          margin: 0 0 0 30px;
+        }
+
+        span {
+          font-weight: 500;
+          font-size: 200px;
+          left: 30px;
+          position: absolute;
+          bottom: 150px;
+          color: $blue;
+        }
+
+        p {
+          margin: 0;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 150%;
+        }
+      }
+    }
+
+    .card-right {
+      .text {
+        span {
+          color: $violet;
+        }
+      }
+    }
+
+    .card-left:nth-child(3) {
+      .text {
+        span {
+          color: $lightGreen;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1071px) {
+  .learnWeb {
+    .cards {
+      .card-left,
+      .card-right {
+        .text {
+          padding: 25px 25px 25px 100px;
+
+          span {
+            left: -27px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 935px) {
+  .learnWeb {
+    .cards {
+      .text {
+        padding: 25px 25px 25px 25px !important;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 874px) {
+  .learnWeb {
+    .cards {
+      .card-left,
+      .card-right {
+        box-shadow: 0 4px 25px rgb(243 206 222 / 40%);
+        border-radius: 10px;
+        flex-direction: column;
+        background: #fff;
+        padding: 25px;
+        .text {
+          padding: 15px 0 !important;
+          margin: 0 !important;
+        }
+        img {
+          object-fit: cover;
+          height: 100%;
+        }
+      }
+
+      .text {
+        box-shadow: none !important;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 100px) {
+  .learnWeb {
+    .cards {
+      .card-left,
+      .card-right {
+        box-shadow: 0 4px 25px rgba(243, 206, 222, 0.4);
+
+        .text {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

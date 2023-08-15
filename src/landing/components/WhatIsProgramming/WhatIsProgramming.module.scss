@@ -1,0 +1,97 @@
+@import "../../../colors.scss";
+
+.WhatIsProgramming {
+  padding: 150px 0;
+  background: #000;
+  .star {
+    position: absolute;
+    top: 55%;
+    left: -8%;
+  }
+  .star2 {
+    position: absolute;
+    right: 10px;
+    top: 20%;
+    img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .WhatIsProgrammingText {
+    max-width: 975px;
+    h2 {
+      font-family: MullerBold;
+      font-size: 48px;
+      line-height: 115%;
+      color: $white;
+    }
+  }
+  .WhatIsProgrammingCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 70px;
+    color: $white;
+    .WhatIsProgrammingCard {
+      padding: 35px;
+      background: $gradient;
+      height: 211px;
+      border-radius: 24px;
+      h2 {
+        font-size: 27px;
+        line-height: 110%;
+        color: $white;
+      }
+      p {
+        line-height: 130%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .WhatIsProgramming {
+    .star {
+      display: none;
+    }
+    .WhatIsProgrammingCards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media (max-width: 780px) {
+  .WhatIsProgramming {
+    padding-top: 50px;
+    .WhatIsProgrammingText {
+      h2 {
+        font-size: 30px;
+      }
+    }
+    .star2 {
+      position: absolute;
+      right: 3px;
+      top: 17%;
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+    .WhatIsProgrammingCards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 410px) {
+  .WhatIsProgramming {
+    .WhatIsProgrammingCards {
+      .WhatIsProgrammingCard {
+        height: 100%;
+      }
+    }
+  }
+}

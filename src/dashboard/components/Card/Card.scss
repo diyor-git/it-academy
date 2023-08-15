@@ -1,0 +1,149 @@
+@import '../../../colors';
+
+.cardLms {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  padding: 8px;
+  background: $white;
+  border-radius: 16px;
+  width: 327px;
+
+  .ant-progress-success-bg, .ant-progress-bg {
+    background-color: $violet;
+  }
+
+  .description {
+    padding: 0 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px;
+    max-height: 140px;
+
+    .error {
+      color: #4b4b4b;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .category {
+      font-size: 16px;
+      line-height: 24px;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 110%;
+      height: 60px;
+      margin-bottom: 10px;
+      font-family: NunitoSansBold, sans-serif;
+    }
+
+    p {
+      margin-top: 4px;
+      font-weight: normal;
+      font-size: 12px;
+      color: #7D8592;
+    }
+
+    .status {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+
+      p {
+        font-weight: normal;
+        font-size: 15px;
+        color: #7D8592;
+        margin: 0;
+      }
+
+      span {
+        margin-left: 5px;
+      }
+
+      .active {
+        color: green;
+        font-weight: bold;
+      }
+
+      .notActive {
+        color: red;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .image {
+    text-align: center;
+    position: relative;
+    margin-bottom: 15px;
+
+    .blocked {
+      border-radius: 16px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background: rgba(115, 115, 115, 0.44);
+
+      img {
+        width: 50px;
+      }
+    }
+
+    img {
+      border-radius: 16px;
+      height: 175px;
+      width: 100%;
+    }
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .cardLms {
+    margin-right: 15px;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .cardLms {
+    width: 270px;
+
+    .description {
+      h3 {
+        font-size: 16px;
+      }
+    }
+
+    .image {
+      img {
+        height: 120px;
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+}

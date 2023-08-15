@@ -1,0 +1,86 @@
+@import "./src/colors";
+
+.courseList {
+  padding-top: 120px;
+
+  .courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+
+    a {
+      &:nth-child(2) .course {
+        background: $blue;
+      }
+
+      &:nth-child(1) .course {
+        background: $orange;
+      }
+
+      &:nth-child(3) .course {
+        background: $violet;
+      }
+    }
+
+    .course {
+      padding: 40px;
+      border-radius: 10px;
+      height: 100%;
+      width: 100%;
+
+      h2 {
+        color: $white;
+        font-weight: 600;
+        font-size: 34px;
+        margin: 0;
+        font-family: "Manrope-ExtraBold", sans-serif;
+      }
+
+      h3 {
+        color: $white;
+        margin: 0;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 130%;
+      }
+
+      p {
+        font-weight: 500;
+        color: $white;
+        font-size: 18px;
+        margin: 0;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 25px;
+        color: $white;
+      }
+
+      hr {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .courseList {
+    .courses {
+      h2 {
+        padding: 0;
+      }
+      display: grid !important;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .courseList {
+    .courses {
+      grid-template-columns: 1fr;
+    }
+  }
+}

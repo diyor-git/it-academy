@@ -1,0 +1,257 @@
+@import '../../../../colors';
+
+.options {
+  display: grid;
+  margin-bottom: 30px;
+
+  .option {
+    text-align: left;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .selectOptions {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  label {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .enterOptions {
+    margin: 0 auto 20px auto;
+  }
+
+  .feedback {
+    text-align: left;
+    margin: 15px auto;
+    width: 725px;
+
+    h2 {
+      font-weight: bold;
+    }
+
+    .codex-editor {
+      text-align: left;
+      border: 1px solid $black;
+      border-radius: 5px;
+      padding: 10px;
+      width: 725px;
+      margin: 0 auto 20px auto;
+    }
+  }
+
+  .multiplyOptions {
+    label {
+      margin-left: 17px;
+    }
+
+    margin: 0 auto;
+
+    input[type=checkbox] {
+      position: relative;
+      cursor: pointer;
+    }
+
+    input[type=checkbox]:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 0;
+      left: 0;
+      border: 2px solid #555555;
+      border-radius: 3px;
+      background-color: white;
+    }
+
+    input[type=checkbox]:checked:after {
+      content: "";
+      display: block;
+      width: 5px;
+      height: 10px;
+      border: solid black;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: absolute;
+      top: 2px;
+      left: 6px;
+    }
+  }
+
+  .singleOptions {
+    margin: 0 auto;
+
+
+    input[type=radio] {
+      display: none;
+    }
+
+    label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      min-width: 100px;
+      padding-left: 35px;
+      margin-right: 0;
+      line-height: 18px;
+      user-select: none;
+    }
+
+    span {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    label:before {
+      content: "";
+      display: inline-block;
+      width: 22px;
+      height: 23px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background: url('../../../../assets/icons/radio1.svg') 0 0 no-repeat;
+    }
+
+    /* Checked */
+    input[type=radio]:checked + label:before {
+      background: url('../../../../assets/icons/radio2.svg') 0 0 no-repeat;
+    }
+
+    /* Hover */
+    label:hover:before {
+      filter: brightness(120%);
+    }
+
+    /* Disabled */
+    input[type=radio]:disabled + label:before {
+      filter: grayscale(100%);
+    }
+
+  }
+
+}
+
+.createTests {
+  #hook-form {
+    padding: 35px;
+  }
+
+  .saveButtons {
+    padding-bottom: 100px;
+
+    .saveIntro {
+      background: #000000;
+      cursor: pointer;
+      box-shadow: 0 6px 12px rgba(135, 135, 135, 0.263686);
+      font-weight: bold;
+      border: none;
+      padding: 8px 35px;
+      font-size: 16px;
+      color: $white;
+      border-radius: 14px;
+      text-align: center;
+      margin: 0 auto;
+      display: flex;
+    }
+  }
+
+  .codex-editor {
+    text-align: center;
+  }
+
+  .enter {
+    width: 400px;
+    height: 40px;
+    border: 1px solid $black;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+
+  p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .ant-select {
+    min-width: 120px;
+  }
+
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: none
+  }
+
+  .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+    padding-right: 18px;
+    font-size: 20px;
+  }
+}
+
+
+.codex-editor__redactor {
+  padding-bottom: 100px !important;
+}
+
+.contentTitle input {
+  font-size: 25px !important;
+}
+
+.questionsAndTimer {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  .timer {
+    margin-left: 8px;
+    display: flex;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 24px;
+    color: $grey;
+    text-transform: lowercase;
+  }
+
+  span {
+    width: 12px;
+    height: 12px;
+    margin: 0 12px;
+    background: $yellow;
+    border-radius: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .options {
+    .singleOptions {
+      input[type=radio]:checked + label:before {
+        background-size: cover;
+      }
+
+      label:before {
+        width: 19px;
+        height: 19px;
+        background-size: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+@import "../../../colors.scss";
+
+.someQuestions {
+  .error {
+    color: red;
+    display: block;
+    margin: 0 0 10px 0;
+  }
+
+  .none {
+    display: none !important;
+  }
+
+  .star {
+    position: absolute;
+    left: -3%;
+    bottom: -15%;
+
+    img {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .someQuestionsContainer {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .someQuestionsCardForm {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    input{
+      text-align: left;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    button:hover {
+      background: #ffe35f;
+    }
+
+    button {
+      transition: 300ms;
+      width: 100%;
+      column-rule: $black;
+      background: $yellow;
+
+      a {
+        color: $violet;
+      }
+    }
+
+    input {
+      padding: 14px 20px;
+    }
+  }
+
+  .someQuestionsCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    .someQuestionsCard:nth-of-type(1) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .someQuestionsCard:nth-of-type(1) {
+      .firstCardContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        button:hover {
+          background: $yellow;
+          color: $violet;
+        }
+
+        button {
+          transition: 300ms;
+          width: max-content;
+
+          a {
+            color: $violet;
+          }
+
+          img {
+            padding: 3px;
+            transform: translateY(0px);
+          }
+        }
+      }
+    }
+
+    .someQuestionsCard {
+      border-radius: 24px;
+      min-height: 318px;
+      width: 100%;
+      padding: 54px 40px 41px 40px;
+      background: $gradient;
+
+      img {
+        transform: translateY(90px);
+      }
+
+      .responseCard {
+        display: none;
+      }
+
+      button {
+        font-family: MullerMedium, sans-serif;
+        color: $violet;
+        padding: 18px 31px;
+        border-radius: 14px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        line-height: 16px;
+      }
+
+      h2 {
+        font-family: MullerMedium, sans-serif;
+        color: $white;
+        font-size: 34px;
+        line-height: 34px;
+        max-width: 350px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1035px) {
+  .someQuestions {
+    .someQuestionsCards {
+      display: grid;
+      grid-template-columns: 1fr !important;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .someQuestions {
+    .someQuestionsCards {
+      .someQuestionsCard {
+        position: relative;
+
+        .pen {
+          position: absolute;
+          right: 15%;
+        }
+
+        min-height: max-content !important;
+      }
+
+      .someQuestionsCard:nth-of-type(1) {
+        .firstCardContent {
+          display: flex;
+          justify-content: start !important;
+          gap: 15px;
+        }
+      }
+
+      .someQuestionsCard {
+        img {
+          width: 63px;
+          height: 87px;
+        }
+
+        h2 {
+          font-size: 25px;
+          line-height: 25px;
+        }
+
+        .responseCard {
+          display: block !important;
+        }
+
+        .cardBtn {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 360px) {
+
+}

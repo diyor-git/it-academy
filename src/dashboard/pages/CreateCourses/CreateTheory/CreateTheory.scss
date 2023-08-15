@@ -1,0 +1,236 @@
+@import '../../../../colors';
+
+.cdx-input.cdx-simple-image__caption {
+  display: none;
+}
+
+li.cdx-list__item {
+  font-size: 18px;
+}
+
+.controlLab span,
+.labType span{
+  display: flex;
+  align-items: center;
+
+  input {
+    width: 20px;
+    margin-right: 15px;
+  }
+}
+
+.formLab {
+  padding: 25px;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  grid-template-areas:
+          "contentTitle"
+          "contentLab "
+          "btnSubmit";
+
+
+  .contentLab {
+    max-width: 1000px;
+    grid-area: contentLab;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+
+    .controlLab {
+      grid-area: unset;
+    }
+    p{
+      margin-top: 10px;
+    }
+  }
+  .linkLab{
+    input:last-child{
+      margin-top: 10px;
+    }
+  }
+  //.labName {
+  //  grid-area: labName;
+  //}
+  //
+  //.contentTitle {
+  //  grid-area: contentTitle;
+  //}
+  //
+  //.linkName {
+  //  grid-area: linkName;
+  //}
+  //
+  //.percentageLab {
+  //  grid-area: percentageLab;
+  //}
+  //
+
+  .contentGithub{
+    h2{
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 25px;
+    }
+  }
+
+}
+
+.createTheory,
+.createTests {
+  width: 100%;
+  background: $white;
+  box-shadow: 0 6px 58px rgba(196, 203, 214, 0.103611);
+  border-radius: 24px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+
+  .formTheory {
+    padding: 25px 0;
+  }
+
+  .hideEditor {
+    display: none;
+  }
+
+  .lab {
+    width: 100%;
+    height: 90vh;
+    border: none;
+  }
+
+  .footerIntro {
+    position: absolute;
+    z-index: 555;
+    bottom: 20px;
+    width: 100%;
+    padding: 0 75px 0 75px;
+
+    .line {
+      width: 100%;
+      border-top: 1px solid #E4E6E8;
+      border-radius: 5px;
+      margin-bottom: 18px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: row-reverse;
+
+      button {
+        font-weight: 600;
+        font-size: 16px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  .installImg,
+  .previewImage {
+    height: 100%;
+    border-radius: 24px 24px 0 0;
+  }
+
+  .installImg h3 {
+    margin-top: -35px;
+  }
+
+  .intro {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 275px;
+    position: relative;
+    border-radius: 24px 24px 0 0;
+    left: 0;
+    top: 0;
+    text-align: center;
+    overflow: hidden;
+
+    .introTitle {
+      width: 90%;
+      position: absolute;
+      bottom: 0;
+      left: 65px;
+
+      input {
+        width: 100%;
+        color: $white;
+        outline: none;
+        background: transparent;
+        padding: 0;
+        text-shadow: 0 0 3px rgb(0, 0, 0);
+        border: none;
+        box-shadow: none;
+        font-weight: 800;
+        font-size: 36px;
+        margin-bottom: 40px;
+
+        &::placeholder {
+          color: white;
+        }
+      }
+
+      .errorInput {
+        border-bottom: 3px dashed red;
+      }
+    }
+
+    .error {
+      color: red;
+    }
+
+    .imgIntro {
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+  }
+
+  .contentTitle {
+    text-align: center;
+    margin-top: 15px;
+
+    textarea,
+    h2 {
+      color: $black;
+      outline: none;
+      text-align: center;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      padding: 30px 0 0 0;
+      width: 100%;
+      box-shadow: none;
+      font-weight: 800;
+      font-size: 36px;
+      margin-bottom: 10px;
+
+      &::placeholder {
+        color: #b8b8b8;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      padding: 0;
+      overflow: auto;
+      resize: none;
+    }
+
+    .errorInput {
+      border-bottom: 3px dashed red;
+    }
+  }
+}

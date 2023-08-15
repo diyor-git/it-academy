@@ -1,0 +1,112 @@
+@import '../../../../colors';
+
+.formAssignCourse {
+  text-align: center;
+
+  .active {
+    color: green;
+    font-weight: bold;
+  }
+
+  .blocked {
+    color: red;
+    font-weight: bold;
+  }
+
+  .ant-select {
+    margin: 0 auto;
+    display: flex;
+    text-align: left;
+    max-width: 800px;
+  }
+
+  span {
+    display: block;
+  }
+
+  button {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.ant-table-thead > tr > th {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7D8592;
+  font-family: NunitoSansBold, sans-serif;
+}
+
+.error {
+  color: red;
+}
+
+.doubleField {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.mentorFields {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+  grid-template-areas:
+"imgMentor description";
+
+  .imgMentor {
+    grid-area: imgMentor;
+  }
+
+  textarea {
+    padding: 10px;
+    resize: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.boughtCourses {
+  max-width: 800px;
+  margin: 20px auto 0 auto;
+
+  p {
+    display: inline-block;
+  }
+
+  .name {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .course {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.userList {
+  background: $white;
+  border-radius: 24px;
+  padding: 50px;
+  width: 100%;
+
+  .title {
+    margin-bottom: 15px;
+  }
+
+  .sub-title {
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 575px) {
+  .doubleField {
+    grid-template-columns: 1fr;
+  }
+}

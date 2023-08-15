@@ -1,0 +1,15 @@
+@import '../../../../colors';
+
+.createArticles{
+  width: 100%;
+  background: $white;
+  border-radius: 24px;
+  padding: 50px;
+
+  .articlesGrid,
+  .memesGrid{
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

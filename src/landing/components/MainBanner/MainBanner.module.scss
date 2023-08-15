@@ -1,0 +1,128 @@
+@import "../../../colors.scss";
+
+.header {
+  background: url("../../../assets/image/mate_header_bg.png") no-repeat center
+    center / cover;
+  min-height: 872px;
+  .headerImg {
+    width: max-content;
+    img {
+      max-width: 503px;
+      height: auto;
+    }
+  }
+  .mainBannerContent {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    .mainBannerContentText {
+      button:hover {
+        background: $gradient2;
+      }
+      a {
+        color: $white;
+      }
+      button {
+        padding: 26px 29px;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: MullerMedium, sans-serif;
+        transition: 300ms;
+        background: $gradient;
+        mix-blend-mode: normal;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+
+      }
+      p {
+        font-size: 22px;
+        margin-bottom: 50px;
+        line-height: 140%;
+        color: $white;
+        max-width: 675px;
+      }
+      h2 {
+        font-family: MullerBold, sans-serif;
+        font-size: 53px;
+        margin-bottom: 50px;
+        line-height: 115%;
+        text-transform: uppercase;
+        color: $white;
+        max-width: 843px;
+        span {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1290px) {
+  .header {
+    .mainBannerContent {
+      .mainBannerContentText {
+        h2 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1112px) {
+  .header {
+    .mainBannerContent {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-bottom: 40px;
+      .headerImg {
+        width: 100%;
+        margin: 40px auto auto;
+        img {
+          max-width: 503px;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 606px) {
+  .header {
+    .mainBannerContent {
+      .mainBannerContentText {
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 16px;
+          width: 100%;
+          max-width: 430px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 468px) {
+  .header {
+    .mainBannerContent {
+      button {
+        width: 100%;
+      }
+      .mainBannerContentText {
+        h2 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 16px;
+          width: 100%;
+          margin-bottom: 30px;
+          max-width: 430px;
+        }
+      }
+    }
+  }
+}

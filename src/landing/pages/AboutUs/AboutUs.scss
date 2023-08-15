@@ -1,0 +1,63 @@
+@import "../../../colors";
+
+.aboutUs {
+  .landingBanner {
+    background: url("../../../assets/image/aboutUsImg.png") no-repeat center
+      center / cover;
+    min-height: 100vh;
+    position: relative;
+
+    .text {
+      margin-top: 200px;
+      margin-bottom: 20px;
+
+      h1 {
+        color: $white;
+        font-family: "DelaGothicOne", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 80px;
+        line-height: 100%;
+
+        margin: 0 0 40px 0;
+      }
+
+      h2 {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 130%;
+        color: $orange;
+        margin-bottom: 30px;
+      }
+
+      h3 {
+        color: $white;
+        font-weight: normal;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .aboutUs {
+    .landingBanner {
+      .text {
+        h1 {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 712px) {
+  .aboutUs {
+    .landingBanner {
+      .text {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

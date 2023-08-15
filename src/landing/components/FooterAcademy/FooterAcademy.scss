@@ -1,0 +1,28 @@
+@import "./src/colors";
+
+.footerAcademy {
+  background: $white;
+  padding: 20px 0;
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: $black;
+    }
+  }
+}
+
+@media (max-width: 712px) {
+  .footerAcademy {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+
+      a {
+        padding-bottom: 5px;
+      }
+    }
+  }
+}

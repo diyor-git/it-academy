@@ -1,0 +1,43 @@
+.moreArticles {
+  margin-top: 120px;
+  padding-bottom: 200px;
+  .title {
+    margin-bottom: 90px !important;
+  }
+  .card {
+    .card-title {
+      height: 110px;
+      display: flex;
+      justify-content: end;
+      flex-direction: column;
+    }
+    h6 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 135%;
+      color: #f2518e;
+    }
+    p {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 150%;
+      color: #909090;
+    }
+    h3 {
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 150%;
+      color: #272727;
+    }
+    .img {
+      width: 100%;
+      max-width: 350px;
+      margin: auto 0 25px;
+    }
+    img {
+      max-width: 350px;
+      min-height: 207px;
+      width: 100%;
+    }
+  }
+}

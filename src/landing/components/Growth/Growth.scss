@@ -1,0 +1,121 @@
+@import "../../../colors";
+
+.growth {
+  padding-top: 100px;
+  padding-bottom: 160px;
+  background: #f2f2f2;
+
+  h2 {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #272727;
+
+    span {
+      color: $blue;
+    }
+  }
+
+  h4 {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #000;
+    margin-top: 100px;
+
+    span {
+      color: #3a5def;
+    }
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #272727;
+  }
+
+  .ant-collapse-content > .ant-collapse-content-box {
+    padding: 20px 0;
+  }
+
+  .ant-collapse-content {
+    border: none;
+  }
+
+  .ant-collapse
+    > .ant-collapse-item
+    > .ant-collapse-header
+    .ant-collapse-arrow
+    svg {
+    width: 25px;
+    height: 43px;
+    color: #00c152;
+  }
+
+  .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ant-collapse {
+    border: none !important;
+  }
+
+  .ant-collapse-content > .ant-collapse-content-box {
+    padding: 20px 0 !important;
+  }
+  .ant-collapse-content {
+    border: none !important;
+  }
+  .ant-collapse
+    > .ant-collapse-item
+    > .ant-collapse-header
+    .ant-collapse-arrow
+    svg {
+    width: 25px !important;
+    height: 43px !important;
+    color: #00c152;
+  }
+  .ant-collapse > .ant-collapse-item {
+    border-bottom: 2px solid #e8e8e8 !important;
+  }
+  .ant-collapse-content-box {
+    background: #f2f2f2 !important;
+  }
+  .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    flex-direction: row-reverse !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 30px 0 !important;
+    font-weight: bold !important;
+    font-size: 24px !important;
+    background: #f2f2f2 !important;
+    line-height: 130% !important;
+    letter-spacing: 0.02em !important;
+    color: #272727 !important;
+  }
+  .ant-collapse {
+    border: none !important;
+  }
+}
+
+@media (max-width: 670px) {
+  .growth {
+    .title {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 455px) {
+  .growth {
+    .title {
+      font-size: 30px;
+    }
+  }
+}

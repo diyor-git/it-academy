@@ -1,0 +1,373 @@
+@import '../../../colors';
+
+
+
+.ant-input-suffix {
+  margin-left: 4px;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}
+
+.loginPage {
+  background: $bg-dashboard;
+  padding: 20px 0;
+  height: 100vh;
+
+  input, .ant-input-password {
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid #D1D1D1;
+    //box-shadow: 0 1px 2px rgba(184, 200, 224, 0.222055);
+    text-align: center;
+    margin-bottom: 25px;
+    outline: none;
+  }
+
+  input.ant-input {
+    padding: 15px !important;
+    margin: 0;
+    height: unset;
+    box-shadow: none;
+    border: none;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100%;
+    background: $white;
+    border-radius: 24px;
+    box-shadow: 0 6px 30px rgba(132, 136, 142, 0.2);
+  }
+
+  input {
+    padding: 15px;
+  }
+
+  .logo {
+    background: url("../../../assets/image/bgLogin.png") no-repeat  center;
+    background-size: cover;
+    width: 500px;
+    border-radius: 24px 0 0 24px;
+    text-align: center;
+
+    img {
+      width: 280px;
+      margin-top: 72px;
+    }
+  }
+
+  .formLogin {
+    background: $white;
+    border-radius: 0 24px 24px 0;
+    text-align: center;
+    padding: 100px 140px 0 140px;
+    width: 100%;
+
+    h2 {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .buttons {
+      margin-top: 35px;
+
+      .telegramBtn {
+        margin-left: 15px;
+        position: relative;
+
+        iframe {
+          position: absolute;
+          opacity: 0;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          margin: 0 auto;
+          right: 0;
+          cursor: pointer;
+        }
+      }
+
+      .socialBtn {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      button {
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 16px;
+        height: 44px;
+        color: $white;
+        padding: 13px 45px;
+        border-radius: 14px;
+        background: $gradient;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        border: none;
+        margin: 0 0 10px 0;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        vertical-align: middle;
+        transition: 0.8s;
+        width: 100%;
+
+        p {
+          margin: 0;
+          font-size: 16px;
+          align-items: center;
+          align-content: center;
+          align-self: center;
+          vertical-align: middle;
+        }
+
+        &:hover {
+          background: $gradient2;
+          transition: 0.8s;
+        }
+
+        img {
+          margin-left: 10px;
+          height: 17px;
+          align-items: center;
+          align-content: center;
+          align-self: center;
+          vertical-align: middle;
+        }
+      }
+
+      .googleBtn {
+        background: transparent;
+        border: 1px solid $violet;
+        color: $violet;
+        text-align: center;
+        padding: 0;
+
+        p {
+          font-size: 15px;
+          height: 21px;
+        }
+
+        img {
+          width: 16px;
+          margin: 0 10px 0 0;
+          height: unset;
+        }
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+
+    .error {
+      text-align: left;
+      width: 100%;
+      display: block;
+      margin-top: -15px;
+      margin-bottom: 20px;
+      color: red;
+    }
+
+
+    .doubleField {
+      display: grid;
+      gap: 0 12px;
+      grid-template-columns: 1fr 1fr;
+
+      p {
+        font-weight: normal;
+        font-size: 16px;
+        color: #7D8592;
+        margin: 0 0 0 12px;
+      }
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        border: 2px solid #969696;;
+      }
+    }
+
+    .forgotPassword {
+      p {
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .loginPage {
+    grid-template-columns: 1fr;
+    height: unset;
+
+    .player-wrapper {
+      margin-right: 50px;
+    }
+
+    .formLogin {
+      border-radius: 0 0 24px 24px;
+      padding: 80px;
+    }
+
+    .logo {
+      border-radius: 24px 24px 0 0;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .loginPage .formLogin .buttons .socialBtn {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    button {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .loginPage {
+    .formLogin {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .formLogin .buttons {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+
+      button {
+        width: 500px;
+      }
+
+      .socialBtn {
+        margin: 0 auto;
+      }
+    }
+
+    .logo {
+      width: 100%;
+      height: 200px;
+      min-height: 200px;
+      text-align: center;
+
+      img {
+        margin: 60px 0 0 0;
+      }
+    }
+
+    .formLogin {
+      padding: 50px 50px 0 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .loginPage {
+    .formLogin {
+      width: 100%;
+
+      .buttons {
+        margin-top: 35px;
+
+        button {
+          width: 100%;
+        }
+
+        .socialBtn {
+          margin: unset;
+
+        }
+      }
+    }
+
+    .logo {
+      img {
+        margin: 60px auto 0 auto;
+        display: flex;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .loginPage {
+    .logo {
+      min-height: 100px;
+      height: 100px;
+
+      img {
+        margin: 30px auto 0 auto;
+        width: 200px;
+        display: flex;
+      }
+    }
+
+    .formLogin {
+      .checkbox {
+        justify-content: center;
+      }
+
+      .buttons {
+        .socialBtn {
+          flex-direction: column;
+        }
+
+        .googleBtn {
+          margin: 10px 0 10px 0;
+        }
+      }
+
+      .doubleField {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 15px 0;
+        margin: 0 auto;
+
+        .forgotPassword {
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .loginPage {
+    .formLogin {
+      padding: 20px 10px 0 10px;
+    }
+  }
+}

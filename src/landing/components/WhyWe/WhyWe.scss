@@ -1,0 +1,155 @@
+@import "./src/colors";
+
+.whyWe {
+  background: #fafafa;
+  padding: 130px 0;
+
+  h2 {
+    span {
+      color: $blue;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+
+    .card {
+      box-shadow: 0 4px 25px rgba(199, 199, 199, 0.25);
+      display: flex;
+      border-radius: 23px;
+      border: 2px solid #fff;
+      transition: 300ms;
+      cursor: pointer;
+
+      &:nth-child(1) {
+        background: $lightGreen;
+        &:hover {
+          border-color: $lightGreen;
+          background: #fff;
+          .card-text {
+            h3 {
+              color: $lightGreen !important;
+            }
+          }
+          color: $lightGreen;
+        }
+      }
+
+      &:nth-child(2) {
+        background: $blue;
+        &:hover {
+          border-color: $blue;
+          background: #fff;
+          .card-text {
+            h3 {
+              color: $blue;
+            }
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        &:hover {
+          border-color: $violet;
+          background: #fff;
+          .card-text {
+            h3 {
+              color: $violet;
+            }
+          }
+        }
+        background: $violet;
+      }
+
+      &:nth-child(4) {
+        background: $pink;
+        &:hover {
+          background: #fff;
+          border-color: $pink;
+          .card-text {
+            h3 {
+              color: $pink;
+            }
+          }
+        }
+      }
+
+      .card-icon {
+        background: $white;
+        border-radius: 20px 0 0 20px;
+        padding: 40px 30px;
+      }
+
+      .card-text {
+        max-width: 400px;
+        border-radius: 0 20px 20px 0;
+        margin-left: 30px;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+
+        h3 {
+          font-family: "Manrope-ExtraBold", sans-serif;
+          font-weight: bold;
+          font-size: 28px;
+          margin: 0;
+          line-height: 130%;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.card-modal {
+  .ant-modal-body {
+    padding: 0;
+  }
+  .ant-modal-close-x {
+    color: #fff;
+  }
+  .modal-content {
+    padding-bottom: 20px;
+    img {
+      max-width: 520px;
+      object-fit: cover;
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .text {
+      padding: 0px 20px;
+      h3 {
+        font-size: 25px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 1035px) {
+  .whyWe {
+    .cards {
+      grid-template-columns: 1fr;
+      .card-text {
+        max-width: 100% !important;
+      }
+    }
+  }
+}
+@media (max-width: 485px) {
+  .whyWe {
+    .cards {
+      grid-template-columns: 1fr;
+      .card-text {
+        margin-left: 20px;
+        h3 {
+          font-size: 22px !important;
+        }
+      }
+    }
+  }
+}

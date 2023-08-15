@@ -1,0 +1,32 @@
+.page-404 {
+  .container {
+    max-width: 1306px;
+  }
+  h1 {
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: #272727;
+  }
+  button {
+    padding: 16px 82px;
+    font-weight: 800;
+    font-size: 22px;
+    background: #f2518e;
+    border-radius: 4px;
+    color: #fff;
+    transition: 300ms;
+    border: 2px solid #f2518e;
+    &:hover {
+      background: #fff;
+      color: #f2518e;
+    }
+  }
+  .content {
+    display: grid;
+    gap: 130px;
+    padding: 120px 0;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}

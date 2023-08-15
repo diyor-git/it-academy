@@ -1,0 +1,136 @@
+@import "./src/colors";
+
+.direction {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+  background: $white;
+
+  .card {
+    position: relative;
+    margin: 50px 0 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: $white;
+    box-shadow: 0 4px 25px #e0e2ea;
+    border-radius: 20px;
+    padding: 55px 105px 55px 105px;
+
+    img {
+      position: absolute;
+      right: 42px;
+      bottom: 0;
+    }
+
+    h2,
+    h3 {
+      margin: 0;
+    }
+
+    h2 {
+      margin-bottom: 35px;
+      font-style: normal;
+      font-weight: 800;
+      font-family: "Manrope-ExtraBold", sans-serif;
+      font-size: 38px;
+      line-height: 130%;
+      width: 750px;
+    }
+    h3 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      margin: 0;
+      line-height: 150%;
+    }
+
+    .form {
+      .send {
+        display: flex;
+        margin-top: 35px;
+      }
+
+      input {
+        padding: 15px 25px;
+        width: 380px;
+        border-radius: 10px 0 0 10px;
+        border: 2px solid #e6e6e6;
+      }
+
+      button {
+        border: none;
+        cursor: pointer;
+        width: 280px;
+        background: $orange;
+        border-radius: 0 10px 10px 0;
+        padding: 15px 45px;
+        font-weight: bold;
+        font-size: 18px;
+        color: $white;
+      }
+    }
+  }
+}
+
+@media (max-width: 1274px) {
+  .direction {
+    margin-top: 70px;
+    .card {
+      margin: 20px;
+      padding: 55px 50px;
+      text-align: center;
+      display: block;
+      h2 {
+        width: 100%;
+      }
+      .form {
+        text-align: center;
+        margin: auto auto 50px;
+        .send {
+          justify-content: center;
+        }
+      }
+      img {
+        position: static;
+        width: 100%;
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .direction {
+    .card {
+      padding: 30px 20px;
+      .send {
+        display: block !important;
+        input {
+          width: 100%;
+        }
+        button {
+          margin-top: 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 525px) {
+  .direction {
+    .card {
+      h2 {
+        font-size: 33px;
+      }
+    }
+  }
+}
+@media (max-width: 444px) {
+  .direction {
+    .card {
+      h2 {
+        font-size: 25px;
+      }
+    }
+  }
+}
